@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "style.css" />
+<title>Quin-McCluskey Method</title>
+</head>
+
+<body >
+<div id="up" align="center">
+<br>
+<h1>Quin-McCluskey Method</h1>
+<h4>Programmed by Adel Salimi</h4>
+
+<br>
+
+<table >
+	<tr>
+    	<th>
+        Enter the minterms:
+        </th>
+        <th>
+        <input id="input_text" type="text" value="0,2,4,5,6,8,10" pattern="(?:[0-9]*|,| )*">
+        </th>
+    </tr>
+    <tr>
+    	<th>
+        Enter the letters&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+        </th>
+        <th>
+        <input id="input_letters" type="text" value="A B C D" pattern="(?:[a-zA-Z]*| )*">
+        </th>
+    </tr>
+</table>
+<br>
+<input type="button" onclick="process()" value="Process">
+<br>
+
+
+<p id="resultShower">...</p>
+<br>
+</div>
+
+Details: show
+<input type="checkbox" onChange="show_trigger()" id="trigger">
+<p id="shower" style="visibility:hidden"></p>
+
+<script type="text/javascript"
+src="Quin-McCluskey.js">
+</script>]
+
+</body>
+</html>
